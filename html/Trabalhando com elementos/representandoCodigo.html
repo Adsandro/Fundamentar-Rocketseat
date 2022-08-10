@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Busca Binaria em python</h1>
+    <pre>
+        <code>
+        def busca_binaria(lista, elemento, min=0, max= None): #Caso não seja informadoo nada na chamada da função, esses serão os elemento min e max
+        if max == None:
+            max = len(lista)-1
+
+        if max < min:
+            return False #Caso o elemento não esteja na lista
+        else:
+            meio = (min + max) //2
+
+        
+        if lista[meio] > elemento:
+            return busca_binaria(lista, elemento, min, meio -1)
+        elif lista[meio] < elemento:
+            return busca_binaria(lista, elemento, meio+1, max)
+        else:
+            return meio
+    
+
+        lista = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 13, 14, 15, 16]
+        print(busca_binaria(lista, 16))  
+        </code>
+    </pre>
+    <p><a href="https://github.com/Adsandro/Python-CCSL-IME-USP-PT2/blob/main/estudos/recursaoBuscaBinaria.py">Repositório</a></p>
+    
+</body>
+</html>
