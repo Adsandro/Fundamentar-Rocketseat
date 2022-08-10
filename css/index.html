@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Estudando CSS</title>
+</head>
+<body>
+
+    <h1>Como adicionar o CSS no HTML?</h1>
+    <h3>Pelo elemento Style</h3>
+    <P>Existem diversas formas de adicionar o CSS ao Html, uma delas pelo elemento <code>style=""</code> dentro das tags. </P>
+    
+    <h3>Link CSS no head</h3>
+    <p>A forma mais comum utilizada é pelo head, ou cabeçalho no arquivo HTML, ele pode ser representado da seguinte forma.</p>
+    <p><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></p>
+    <p>Desa forma, devemos informar em <code>href=""</code> o local do arquivo css que utilizaremos</p>
+
+    <h3>Style no head</h3>
+    <p>Essa forma consiste em utilizar a tag Style dentro do head do HTML.
+        <pre>
+            <code>
+                &lt;style&gt;
+                    h1 {
+                        color: blue;
+                        font-size: 40;
+                        background-color: red;
+                        width: 300px;
+                    }
+                &lt;/style&gt;
+            </code>
+        </pre>
+    </p>
+    <h3>Pelo @import</h3>
+    <p>O <code>@import</code> é utilizado dentro da pagina de CSS, em especifico ele possui a função de importar informações da Web, como por exemplo fonts que estão cadastradas no google fonts, segue exemplo de como utilizar.</p>
+    <pre><code>@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap')</code></pre>
+    <p>Porem recomenda-se que seja utilizada em formato de link dentro do head do HTML da seguinte forma.
+
+    </p>
+    <pre><code><link rel="preconnect" href="https://fonts.googleapis.com">
+        &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
+        &lt;link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet"&gt;</code></pre>
+</body>
+</html>
