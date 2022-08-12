@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>O que são box model?</h1>
+    <p>De uma forma leiga de se falar, são apenas retangulos que possuem propriedades, podendo conter caixas dentro de caixas.</p>
+    <h3>Algumas de suas propriedades</h3>
+    <p>Tamanho (altura e largura) : width e height</p>
+    <p>Conteudo: content</p>
+    <p>Bordas: Border</p>
+    <p>Preenchimento interno: peeding</p>
+    <p>Espaçamento fora da caixa: margin</p>
+
+    <h3>Box Sizing</h3>
+    <p>Box Sizing representa o tamanho total de uma box no css, no exemplo a seguir o box sizing possui 140px, por possuir uma largura de 100px e padding de 20px em cada lado.</p>
+    <p><pre><code>
+        div {
+            width: 100px;
+            height: 100px;
+            margin: 10%;
+            padding: 0 20px;
+        }
+    </code></pre></p>
+    <p>Caso queira que a box possua os 100px solicitado em width deve-se implementar o <code> box sizing: border-box;</code></p>
+
+    <h3>Display-block-inline</h3>
+    <p>de forma simple, esse display mostra como os elementos serão representados dentro da <code>&lt;div&gt;</code>, seja em bloco ou em linhas.</p>
+    <img width="700vh" src="http://devfuria.com.br/html-css/display/css-display.png" alt="">
+    
+    <p><strong>Block:</strong> <code>&lt;p&gt; &lt;div&gt; &lt;selection&gt; &lt;h1&gt;</code></p>
+    <p><strong>Inline:</strong> <code>&lt;strong&gt; &lt;b&gt; &lt;span&gt; &lt;em&gt; </code></p>
+
+
+    <h3>Margem (margin)</h3>
+    <p>Esse elemento representa o espaçamento entre os objetos presentes no HTML.</p>
+    <p><i>- margin-top | margin-right | margin-bottom | margin-left</i></p>
+    <pre><code>
+
+        div {
+                margin: 12px 16px 10px 4px;
+                margin: 12px 16px 0;
+                margin: 8px 16px;
+                margin: 8px;
+            }
+
+    </code></pre>
+    <p>O elemento margin possuem o valor <code>auto</code> que ajuda de forma automatica a largura da margem, mantendo a <code>&lt;div&gt;</code> no centro e o top e bottom em 0.</p>
+    <p><i>Cuidado com margin collapsing (top se ajunta ao bottom)</i></p>
+
+    <h3>Padding</h3>
+    <p>Representa o espaçamento interno dos elementos do HTML, e possuem as mesmas propriedades do Margin.</p>
+    <pre><code>
+        div {
+            padding: 12px 16px 10px dpx;
+            padding: 12px 16px 0;
+            padding: 8px 16px;
+            padding: 8px;
+            }
+    </code></pre>
+
+    <h3>Bordas (border)</h3>
+    <p><strong>Valores </strong>: <code> “&lt;border-style&gt;" | “&lt;border-width&gt; | ~&lt;border-color&gt;" </code></p>
+    <p>Para que o elemento funcione é essencial que seja declarado todos os valores anteriores.</p>
+    <img width="700vh" src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2020/08/background-borders.png?fit=1200%2C600&ssl=1" alt="">
+    
+    
+</body>
+</html>
