@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Tipos de cores.</h1>
+    <ul>
+        <li>Background-color</li>
+        <li>Color</li>
+        <li>Border-color</li>
+    </ul>
+
+    <h2>Valores</h2>
+    <ul>
+        <li>Palavra-chave (Blue, Green, red)</li>
+        <li>Hexadecimail (#0000)</li>
+        <li>Funções: rgb, rgba, hsl, hsla</li>
+    </ul>
+    <h2>Formas de utilizar</h2>
+    <h3>Por currentcolor</h3>
+    <p><code> color: currentcolor;</code> dessa forma o elemento selecionado herdara a referencia de cor do elemento pai.</p>
+    <p><code>color: red;</code> Nesse modelo estaremos informando diretamente qual cor deve ser colocada na div filho.</p>
+
+    <h3>Hexadecimail</h3>
+    <p><pre><code>
+        color: #090;
+        color: #009900;
+        color: #090a;
+        color: #009900a;
+    </code></pre></p>
+    <p>As duas primeiras formas representam apenas o RGB, ja as duas ultimas representam o RGBA com a inclusão do alpha que da a transparencia para a cor.</p>
+
+    <h3>RGB</h3>
+    <p> O RGB possui uma variação de 0 a 255 em sua paleta de cores.</p>
+    <p><pre><code>
+        color: rgb(34, 12, 64, 0.6);
+        color: rgba(34, 12, 64, 0.6);
+        color: rgb(34 12 64 / 0.6);
+        color: rgb(34 12, 64 / 0.3);
+        color: rgb(34.0 12, 64 / 60%);
+        color: rgb(34.0 12, 64 / 30%);
+
+    </code></pre></p>
+
+    <h3>HSL</h3>
+    <p>Pode ser considerado um elemento mais complexo para cores, possuindo a seguinte sintaxe:</p>
+    <p><pre><code>
+        color: hsl(30, 100%, 50%, 0.6); 
+        color: hsla(30, 100%, 50%, 0.6);
+        color: hs1(30 100% 50% / 0.6);
+        color: hsla(30 100% 50% / 0.6);
+        color: hs1(30.0 100% 50% / 60%); 
+        color: hsla(30.2 100% 50% / 60%);
+    </code></pre></p>
+    <img width="400vh" src="https://i7x7p5b7.stackpathcdn.com/codrops/wp-content/uploads/2015/01/hsl-color-wheel.png" alt="">
+
+    <h3>Valores globais</h3>
+    <p> </p>
+    
+</body>
+</html>
