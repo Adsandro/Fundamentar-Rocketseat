@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Como se utiliza e quais são as tags de midia?</h1>
+    <h2>Trabalhando com videos e audios</h2>
+    <h3>Video</h3>
+    
+    <video controls>
+        <source src="assets/assets-example/rocket.mp4" type="mp4">
+        <p>Esse paragrafo aparecera caso o browser não suporte o video</p>
+    </video>
+
+    <p><pre><code>
+        &lt;video controls>
+            &lt;source src="https://youtu.be/uWgW56qwbzI" type="video/mp4">
+            &lt;p>Esse paragrafo aparecera caso o browser não suporte o video&lt;/p&gt;
+        &lt;/video>
+    </code></pre></p>
+    <p>Além da tag <code>controls</code> podemos utilizar outras ,como <code>autoplay</code> na qual o video se inicia sozinho ao entrar na pagina, <code>preload</code> que ao entrarmos na pagina o video começa a ser baixado uma previa para quando iniciarmos a vizualização, <code>loop</code> ao finalizar o video ele se inicia automaticamente, <code>muted</code> o video inicia-se mutado, <code>poster</code> podemos adicionar um poster que aparecera antes do video se iniciar.</p>
+
+    <h3>audio</h3>
+    <p>A tag audio funciona da mesma forma que a tag video.</p>
+
+    <audio controls>
+        <source src="assets/assets-example/viper.mp3" type="audio/mp3">
+        <p>Esse paragrafo aparecera caso o browser não suporte o video</p>
+    </audio>
+
+    <p><pre><code>
+        &lt;audio controls>
+            &lt;source src="assets/assets-example/viper.mp3" type="audio/mp3">
+            &lt;p>Esse paragrafo aparecera caso o browser não suporte o video&lt;/p>
+        &lt;/audio>    
+    </code></pre></p>
+
+    <h3>Iframe</h3>
+    <p>O iframe é uma forma de utilizar videos que ja estão publicados na internet, porem de uma forma mais pratica.</p>
+    <iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/yAKw_CScZJ4" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+    </iframe>
+    
+    <p><pre><code>
+    &lt;iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/yAKw_CScZJ4" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+    &lt;/iframe>
+    </code></pre></p>
+
+    <h2>Trabalhando com imagens</h2>
+    <h3>Images</h3>
+    <a href="https://avatars.githubusercontent.com/u/92887513?v=4">
+        <img src="https://avatars.githubusercontent.com/u/92887513?v=4" 
+            alt="Minha foto do GitHub"
+            title="Minha foto no GitHub, isso aparecera ao descansar o mouse na foto"
+            height="200px">
+    </a>
+
+    <p><pre><code>
+        &lt;img src="https://avatars.githubusercontent.com/u/92887513?v=4" 
+        alt="Minha foto do GitHub"
+        title="Minha foto no GitHub, isso aparecera ao descansar o mouse na foto"
+        height="200px"&gt;
+    </code></pre></p>
+        
+    <h3>Figure</h3>
+    <p>A figure junto com a figcaption podem ser utilizados para dar créditos para uma imagem.</p>
+    <a href="https://www.rocketseat.com.br/">
+        <figure>
+            <img src="https://www.rocketseat.com.br/assets/logos/rocketseat.svg"
+             alt="Logo rocketseat">
+            <figcaption>
+                Logo da rocketseat
+            </figcaption>
+        </figure>
+    </a>
+    <p><pre><code>
+        &lt;a href="https://www.rocketseat.com.br/">
+            &lt;figure>
+                &lt;img src="https://www.rocketseat.com.br/assets/logos/rocketseat.svg"
+                 alt="Logo rocketseat">
+                &lt;figcaption>
+                    Logo da rocketseat
+                &lt;/figcaption>
+            &lt;/figure>
+        &lt;/a>
+    </code></pre></p>
+    
+</body>
+</html>
+
