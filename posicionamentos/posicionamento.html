@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Quais são e como funciona o posicionamento dos elementos inblock no html?</h1>
+    <p><i>As propriedades podem ser alteradas no CSS.</i></p>
+    <p>o nome do atributo que utilizamos é <code>position</code>, com ele podemos utilizar os valores, <code>relative</code> que não altera o fluxo em que as divs estão posicionadas, <code>absolute</code> na qual o fludo das demais divs são alteradas, ja o valor <code>fixed</code>, como o proprio nome ja diz é utilizado para deixar o elemento fixo na tela, como por exemplo em navsBar em que acompanham sempre fixas na tela.</p>
+    <img src="https://miro.medium.com/max/1200/1*pe9E2kzrX48Wwn_0wKklmw.png" alt="exemplos position" width="400vw">
+    <p>Podemos tambem trocar a ordem de empilhamento das div utilizando a propriedade <code>z-index</code>.</p>
+    <img src="https://bitsofco.de/img/blog/34/2.png" alt="z-index" width="400vw">
+    <h2>Trabalhando com flex-direction</h2>
+    <p>Para trabalharmos com flex-direction devemos declarar na div pai o <code>display:flex;</code>com ele tornamos a div flexivel, e podemos devolve-las em formato de coluna através do <code>flex-direction:column;</code></p>
+    <div class="container">
+        <div class="red">Red</div>
+        <div class="green">Green</div>
+        <div class="blue">Blue</div>
+    </div>
+    <p><pre><code>
+        .container {
+            display: flex; /* Dessa forma deixamos as caixas uma do lado da outra */
+            flex-direction: column; /* Agora deixamos em forma de coluna */
+            justify-content: center; /* Colocamos o elemento no centro */
+        }
+    </code></pre></p>
+    
+    <h2>Trabalhando com grid</h2>
+    <p>O grid pode ser considerado uma forma alternativa do Flexbox, com ela podemos dividir a tela em areas e dessa forma informar quais divs devem estar em cada area e dessa forma tambem podemos estar indicando quanto cada area deve ter de tamanho ou largura.</p>
+
+
+    <div class="grid">
+        <div class="red2">red</div>
+        <div class="green2">green</div>
+        <div class="blue2">blue</div>
+        <div class="yellow">yellow</div>
+    </div>
+
+    <p><pre><code>
+        .grid {
+            display: grid;
+            grid-template-areas: 
+            "header header"
+            "main aside"
+            "footer footer";
+            grid-template-rows: 30px 400px 40px;
+            grid-template-columns: 400px 100px;
+        }
+        
+        .red2 {
+            grid-area: header;
+            background-color: red;
+           }
+           
+        .green2 {
+            grid-area: main;
+               background-color: green;
+           }
+           
+        .blue2 {
+            grid-area: aside;
+            background-color: blue;
+           }
+        
+        .yellow {
+            grid-area: footer;
+            background-color: yellow;
+        }
+    </code></pre></p>
+
+</body>
+</html>

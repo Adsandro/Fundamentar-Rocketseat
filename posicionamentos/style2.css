@@ -1,0 +1,60 @@
+body {
+    padding: 0 10vw;
+    background-color:aliceblue;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex; /* Dessa forma deixamos as caixas uma do lado da outra */
+    flex-direction: column; /* Agora deixamos em forma de coluna */
+    justify-content: center; /* Colocamos o elemento no centro */
+}
+.red {
+ width: 50px;
+ height: 50px;
+ background-color: red;
+}
+
+.green {
+    width: 50px;
+    height: 50px;
+    background-color: green;
+}
+
+.blue {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main aside"
+    "footer footer";
+    grid-template-rows: 30px 400px 40px;
+    grid-template-columns: 400px 100px;
+}
+
+.red2 {
+    grid-area: header;
+    background-color: red;
+   }
+   
+.green2 {
+    grid-area: main;
+       background-color: green;
+   }
+   
+.blue2 {
+    grid-area: aside;
+    background-color: blue;
+   }
+
+.yellow {
+    grid-area: footer;
+    background-color: yellow;
+}
