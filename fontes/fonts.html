@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Como podemos estar modificando as fontes no CSS?</h1>
+    <h3>Font Family</h3>
+    <p>declaramos uma familia de fonte para o elemento que estamos selecionando</p>
+    <p><pre><code>
+        p {
+            font-family: 'Courier New', Courier, serif;
+        }
+    </code></pre></p>
+    <p>Esse atributo possui Fallback, caso não encontre a fonte principal selecionada, estara procurando a segunda declarada.</p>
+
+    <h3>Font Weigth</h3>
+    <p>O font-weigth como o proprio nome ja diz retrata o peso da fonte, se ela é <code>bold, light, bolder</code> ou até mesmo niveis numericos. como <code>100, 200, 300.</code></p>
+    <p><pre><code>
+        p {
+            font-weight: bolder;
+        }
+    </code></pre></p>
+
+    <h3>Font Style</h3>
+    <p>Declara o estilo da fonte, como por exemplo o <code>italic e oblique.</code></p>
+    <p><pre><code>
+        p {
+            font-style: italic;
+        }
+    </code></pre></p>
+
+    <h3>Font Size</h3>
+    <p>Definimos o tamanho da fonte.</p>
+    <p><pre><code>
+        p {
+            font-size: 100px;
+        }
+    </code></pre></p>
+
+    <h2>Outras modificações com fontes.</h2>
+    <h3>Letter spacing e word spacing</h3>
+    <p>Letter-spacing representa o espaço entre as letras dentro de um paragrafo, ja o word-spacing representa o espaçamento entre as palavras, ambas devem ser declaradas com uma unidade de medida.</p>
+    <h3>Line-height e text-transform</h3>
+    <p><code>Line-height</code> representa o espaço entre as linhas, <code>text-transform</code> podemos transformar o texto, como por exemplo, deixar todo o texto em letra maiúscula com o valor <code>uppercase</code>, minuscula com <code>lowercase</code>, e entre outras transformações.</p>
+    <h3>text-decoration</h3>
+    <p>demonstra a decoração do texto como por exemplo <code>overline, underline, line-throught </code></p>
+    <h3>text-align</h3>
+    <p>Essa propriedade representa o alinhamento do texto no paragrafo, como <code>center, left, right ou justify</code></p>
+    <h3>text-shadow</h3>
+    <p>Adicionamos sombra no texto.</p>
+    <p><pre><code>
+        /* deslocamento-x | deslocamento-y | raio-de-desfoque | cor */
+        text-shadow: 1px 1px 2px black
+    </code></pre></p>
+
+</body>
+</html>
